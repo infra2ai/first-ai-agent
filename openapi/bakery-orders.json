@@ -1,0 +1,36 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Blue Penguin Orders",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "https://<your-function-app>.azurewebsites.net/api"
+    }
+  ],
+  "paths": {
+    "/OrderStatus": {
+      "get": {
+        "operationId": "getOrderStatus",
+        "description": "Get the status and delivery time of a Blue Penguin Bakery order.",
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "query",
+            "required": true,
+            "description": "The order number, for example BP-1042",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The order, or found: false if there is no such order"
+          }
+        }
+      }
+    }
+  }
+}

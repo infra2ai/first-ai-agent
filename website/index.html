@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Blue Penguin Bakery</title>
+<style>
+  :root { --navy: #14325c; --blue: #2f6fd6; --cream: #fff8ee; --peach: #ffe3c7; --ink: #2b2b2b; --muted: #6b6b6b; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif; background: var(--cream); color: var(--ink); width: 1920px; height: 1080px; overflow: hidden; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 26px 80px; background: #fff; box-shadow: 0 2px 14px rgba(0,0,0,.06); }
+  .logo { font-size: 34px; font-weight: 800; color: var(--navy); letter-spacing: -.5px; }
+  nav a { margin-left: 44px; font-size: 22px; color: var(--navy); text-decoration: none; font-weight: 600; }
+  .hero { display: flex; align-items: center; gap: 60px; padding: 70px 80px 40px; }
+  .hero h1 { font-size: 76px; line-height: 1.05; color: var(--navy); letter-spacing: -1px; }
+  .hero p { font-size: 28px; color: var(--muted); margin: 22px 0 34px; max-width: 760px; line-height: 1.4; }
+  .btn { display: inline-block; background: var(--navy); color: #fff; font-size: 24px; font-weight: 700; padding: 18px 34px; border-radius: 14px; }
+  .art { width: 420px; height: 420px; border-radius: 50%; background: var(--peach); display: flex; align-items: center; justify-content: center; font-size: 220px; flex-shrink: 0; }
+  h2 { font-size: 36px; color: var(--navy); padding: 0 80px; margin-bottom: 22px; }
+  .menu { display: grid; grid-template-columns: repeat(5, 1fr); gap: 22px; padding: 0 80px; }
+  .item { background: #fff; border-radius: 18px; padding: 22px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .item .e { font-size: 54px; }
+  .item h3 { font-size: 22px; margin: 10px 0 6px; color: var(--navy); }
+  .item .price { font-size: 22px; color: var(--blue); font-weight: 700; }
+  footer { position: absolute; bottom: 0; left: 0; right: 0; padding: 22px 80px; font-size: 20px; color: var(--muted); background: #fff; }
+
+  #launcher { position: fixed; right: 48px; bottom: 90px; background: var(--blue); color: #fff; border: none; font: 700 26px "Segoe UI", sans-serif;
+    padding: 20px 32px; border-radius: 40px; box-shadow: 0 10px 30px rgba(47,111,214,.45); cursor: pointer; }
+  #chat { position: fixed; right: 48px; bottom: 90px; width: 600px; height: 720px; background: #fff; border-radius: 24px; display: none; flex-direction: column;
+    box-shadow: 0 20px 60px rgba(0,0,0,.25); overflow: hidden; }
+  #chat.open { display: flex; }
+  .chat-head { background: var(--navy); color: #fff; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .chat-head b { font-size: 24px; } .chat-head small { display: block; font-size: 17px; opacity: .8; }
+  #how { background: rgba(255,255,255,.15); color: #fff; border: 1px solid rgba(255,255,255,.4); border-radius: 10px; font: 600 17px "Segoe UI", sans-serif; padding: 8px 14px; cursor: pointer; }
+  #msgs { flex: 1; overflow-y: auto; padding: 22px; display: flex; flex-direction: column; gap: 14px; background: #f7f8fb; }
+  .msg { max-width: 86%; padding: 14px 18px; border-radius: 18px; font-size: 21px; line-height: 1.42; white-space: pre-wrap; }
+  .msg.you { align-self: flex-end; background: var(--blue); color: #fff; border-bottom-right-radius: 6px; }
+  .msg.penny { align-self: flex-start; background: #fff; border: 1px solid #e3e6ee; border-bottom-left-radius: 6px; }
+  .msg.typing { color: var(--muted); font-style: italic; }
+  .chat-input { display: flex; gap: 10px; padding: 16px; border-top: 1px solid #e6e6e6; }
+  #chat-input { flex: 1; font: 20px "Segoe UI", sans-serif; padding: 14px 16px; border: 2px solid #d9dde7; border-radius: 14px; outline: none; }
+  #chat-input:focus { border-color: var(--blue); }
+  #send { background: var(--blue); color: #fff; border: none; border-radius: 14px; font: 700 20px "Segoe UI", sans-serif; padding: 0 22px; }
+
+  #dev { position: fixed; left: 48px; top: 120px; width: 1180px; background: #0f1c30; color: #d6e6ff; border-radius: 22px; padding: 28px 32px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.35); display: none; font-family: "SF Mono", Menlo, Consolas, monospace; }
+  #dev.open { display: block; }
+  #dev h4 { font: 700 24px "Segoe UI", sans-serif; color: #8fc3ff; margin: 0 0 12px; }
+  #dev pre { font-size: 20px; line-height: 1.5; white-space: pre-wrap; margin-bottom: 22px; }
+  #dev .k { color: #8fc3ff; } #dev .s { color: #7ee2a8; } #dev .c { color: #8b9bb4; }
+  .steps { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+  .steps span { font: 600 19px "Segoe UI", sans-serif; background: #1d3354; border: 1px solid #36557f; padding: 8px 14px; border-radius: 10px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">🐧 Blue Penguin Bakery</div>
+  <nav><a>Menu</a><a>Custom cakes</a><a>Delivery</a><a>Visit us</a></nav>
+</header>
+<section class="hero">
+  <div>
+    <h1>Fresh from our oven,<br>every morning since 7 am</h1>
+    <p>Celebration cakes, cupcakes and bread, baked by hand in Zurich. Order a day ahead and we deliver within 10 kilometres.</p>
+    <span class="btn">Order a cake</span>
+  </div>
+  <div class="art">🎂</div>
+</section>
+<h2>Today's favourites</h2>
+<section class="menu">
+  <div class="item"><div class="e">🍫</div><h3>Chocolate celebration cake</h3><div class="price">CHF 34</div></div>
+  <div class="item"><div class="e">🧁</div><h3>Vanilla cupcakes, box of 12</h3><div class="price">CHF 22</div></div>
+  <div class="item"><div class="e">🍋</div><h3>Lemon tart</h3><div class="price">CHF 18</div></div>
+  <div class="item"><div class="e">🥐</div><h3>Butter croissant</h3><div class="price">CHF 4</div></div>
+  <div class="item"><div class="e">🍞</div><h3>Sourdough loaf</h3><div class="price">CHF 7</div></div>
+</section>
+<footer>Open Monday to Saturday, 7 am to 6 pm · Closed on Sundays and public holidays</footer>
+
+<button id="launcher" aria-label="Ask Penny">💬 Ask Penny</button>
+<div id="chat" role="dialog" aria-label="Chat with Penny">
+  <div class="chat-head">
+    <div><b>🐧 Penny</b><small>Blue Penguin Bakery assistant</small></div>
+    <button id="how" aria-label="How it works">&lt;/&gt; How it works</button>
+  </div>
+  <div id="msgs"><div class="msg penny">Hi! I'm Penny. Ask me about orders, opening hours, our menu, or allergies.</div></div>
+  <div class="chat-input"><input id="chat-input" placeholder="Ask Penny anything…" autocomplete="off"><button id="send">Send</button></div>
+</div>
+
+<div id="dev" aria-label="Developer view">
+  <h4>What the website sends to Foundry</h4>
+  <pre id="dev-req"><span class="c">Ask Penny a question first.</span></pre>
+  <h4>What Penny did</h4>
+  <div class="steps" id="dev-steps"></div>
+  <h4>The server code</h4>
+<pre><span class="k">const</span> res = <span class="k">await</span> fetch(<span class="s">`${endpoint}/openai/v1/responses`</span>, {
+  method: <span class="s">'POST'</span>,
+  headers: { Authorization: <span class="s">`Bearer ${entraIdToken}`</span> },  <span class="c">// no keys</span>
+  body: JSON.stringify({
+    agent_reference: { name: <span class="s">'penny'</span>, type: <span class="s">'agent_reference'</span> },
+    input: question,
+  }),
+});</pre>
+</div>
+
+<script>
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  $('launcher').onclick = () => { $('chat').classList.add('open'); $('launcher').style.display = 'none'; $('chat-input').focus(); };
+  $('how').onclick = () => $('dev').classList.toggle('open');
+  const add = (cls, text) => { const d = document.createElement('div'); d.className = 'msg ' + cls; d.textContent = text; $('msgs').appendChild(d); $('msgs').scrollTop = 1e6; return d; };
+  async function send() {
+    const q = $('chat-input').value.trim();
+    if (!q) return;
+    $('chat-input').value = '';
+    add('you', q);
+    const wait = add('penny typing', 'Penny is thinking…');
+    try {
+      const r = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: q }) });
+      const data = await r.json();
+      if (!r.ok) throw new Error(data.error || 'Request failed');
+      wait.className = 'msg penny done';
+      wait.textContent = data.text.replace(/\*\*/g, '');
+      $('dev-req').innerHTML = `<span class="k">POST</span> ${esc(data.request.url)}\n` + esc(JSON.stringify(data.request.body, null, 2))
+        .replace(/"([^"]+)":/g, '<span class="k">"$1"</span>:').replace(/: "([^"]*)"/g, ': <span class="s">"$1"</span>');
+      $('dev-steps').innerHTML = data.steps.map((s) => `<span>${esc(s)}</span>`).join('<span style="background:none;border:none">→</span>');
+    } catch (e) {
+      wait.className = 'msg penny done';
+      wait.textContent = 'Sorry, something went wrong: ' + e.message;
+    }
+    $('msgs').scrollTop = 1e6;
+  }
+  $('send').onclick = send;
+  $('chat-input').addEventListener('keydown', (e) => { if (e.key === 'Enter') send(); });
+</script>
+</body>
+</html>

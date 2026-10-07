@@ -1,0 +1,131 @@
+date,product,units_sold,unit_price_chf
+2026-09-01,Chocolate celebration cake,7,34
+2026-09-01,Vanilla cupcakes (box of 12),32,22
+2026-09-01,Lemon tart,8,18
+2026-09-01,Butter croissant,88,4
+2026-09-01,Sourdough loaf,32,7
+2026-09-02,Chocolate celebration cake,9,34
+2026-09-02,Vanilla cupcakes (box of 12),32,22
+2026-09-02,Lemon tart,8,18
+2026-09-02,Butter croissant,78,4
+2026-09-02,Sourdough loaf,32,7
+2026-09-03,Chocolate celebration cake,10,34
+2026-09-03,Vanilla cupcakes (box of 12),34,22
+2026-09-03,Lemon tart,9,18
+2026-09-03,Butter croissant,114,4
+2026-09-03,Sourdough loaf,41,7
+2026-09-04,Chocolate celebration cake,10,34
+2026-09-04,Vanilla cupcakes (box of 12),48,22
+2026-09-04,Lemon tart,8,18
+2026-09-04,Butter croissant,96,4
+2026-09-04,Sourdough loaf,38,7
+2026-09-05,Chocolate celebration cake,15,34
+2026-09-05,Vanilla cupcakes (box of 12),49,22
+2026-09-05,Lemon tart,11,18
+2026-09-05,Butter croissant,151,4
+2026-09-05,Sourdough loaf,67,7
+2026-09-07,Chocolate celebration cake,8,34
+2026-09-07,Vanilla cupcakes (box of 12),30,22
+2026-09-07,Lemon tart,6,18
+2026-09-07,Butter croissant,59,4
+2026-09-07,Sourdough loaf,38,7
+2026-09-08,Chocolate celebration cake,7,34
+2026-09-08,Vanilla cupcakes (box of 12),29,22
+2026-09-08,Lemon tart,5,18
+2026-09-08,Butter croissant,95,4
+2026-09-08,Sourdough loaf,35,7
+2026-09-09,Chocolate celebration cake,9,34
+2026-09-09,Vanilla cupcakes (box of 12),45,22
+2026-09-09,Lemon tart,7,18
+2026-09-09,Butter croissant,107,4
+2026-09-09,Sourdough loaf,32,7
+2026-09-10,Chocolate celebration cake,9,34
+2026-09-10,Vanilla cupcakes (box of 12),35,22
+2026-09-10,Lemon tart,7,18
+2026-09-10,Butter croissant,105,4
+2026-09-10,Sourdough loaf,43,7
+2026-09-11,Chocolate celebration cake,9,34
+2026-09-11,Vanilla cupcakes (box of 12),37,22
+2026-09-11,Lemon tart,7,18
+2026-09-11,Butter croissant,140,4
+2026-09-11,Sourdough loaf,43,7
+2026-09-12,Chocolate celebration cake,16,34
+2026-09-12,Vanilla cupcakes (box of 12),48,22
+2026-09-12,Lemon tart,13,18
+2026-09-12,Butter croissant,138,4
+2026-09-12,Sourdough loaf,74,7
+2026-09-14,Chocolate celebration cake,8,34
+2026-09-14,Vanilla cupcakes (box of 12),30,22
+2026-09-14,Lemon tart,7,18
+2026-09-14,Butter croissant,82,4
+2026-09-14,Sourdough loaf,30,7
+2026-09-15,Chocolate celebration cake,10,34
+2026-09-15,Vanilla cupcakes (box of 12),32,22
+2026-09-15,Lemon tart,9,18
+2026-09-15,Butter croissant,90,4
+2026-09-15,Sourdough loaf,43,7
+2026-09-16,Chocolate celebration cake,10,34
+2026-09-16,Vanilla cupcakes (box of 12),31,22
+2026-09-16,Lemon tart,7,18
+2026-09-16,Butter croissant,98,4
+2026-09-16,Sourdough loaf,36,7
+2026-09-17,Chocolate celebration cake,8,34
+2026-09-17,Vanilla cupcakes (box of 12),30,22
+2026-09-17,Lemon tart,8,18
+2026-09-17,Butter croissant,122,4
+2026-09-17,Sourdough loaf,48,7
+2026-09-18,Chocolate celebration cake,12,34
+2026-09-18,Vanilla cupcakes (box of 12),39,22
+2026-09-18,Lemon tart,9,18
+2026-09-18,Butter croissant,112,4
+2026-09-18,Sourdough loaf,51,7
+2026-09-19,Chocolate celebration cake,18,34
+2026-09-19,Vanilla cupcakes (box of 12),46,22
+2026-09-19,Lemon tart,10,18
+2026-09-19,Butter croissant,197,4
+2026-09-19,Sourdough loaf,66,7
+2026-09-21,Chocolate celebration cake,9,34
+2026-09-21,Vanilla cupcakes (box of 12),29,22
+2026-09-21,Lemon tart,5,18
+2026-09-21,Butter croissant,110,4
+2026-09-21,Sourdough loaf,43,7
+2026-09-22,Chocolate celebration cake,9,34
+2026-09-22,Vanilla cupcakes (box of 12),33,22
+2026-09-22,Lemon tart,7,18
+2026-09-22,Butter croissant,82,4
+2026-09-22,Sourdough loaf,39,7
+2026-09-23,Chocolate celebration cake,10,34
+2026-09-23,Vanilla cupcakes (box of 12),35,22
+2026-09-23,Lemon tart,8,18
+2026-09-23,Butter croissant,96,4
+2026-09-23,Sourdough loaf,48,7
+2026-09-24,Chocolate celebration cake,8,34
+2026-09-24,Vanilla cupcakes (box of 12),35,22
+2026-09-24,Lemon tart,9,18
+2026-09-24,Butter croissant,95,4
+2026-09-24,Sourdough loaf,31,7
+2026-09-25,Chocolate celebration cake,9,34
+2026-09-25,Vanilla cupcakes (box of 12),36,22
+2026-09-25,Lemon tart,9,18
+2026-09-25,Butter croissant,135,4
+2026-09-25,Sourdough loaf,39,7
+2026-09-26,Chocolate celebration cake,14,34
+2026-09-26,Vanilla cupcakes (box of 12),53,22
+2026-09-26,Lemon tart,11,18
+2026-09-26,Butter croissant,98,4
+2026-09-26,Sourdough loaf,72,7
+2026-09-28,Chocolate celebration cake,10,34
+2026-09-28,Vanilla cupcakes (box of 12),29,22
+2026-09-28,Lemon tart,5,18
+2026-09-28,Butter croissant,76,4
+2026-09-28,Sourdough loaf,35,7
+2026-09-29,Chocolate celebration cake,12,34
+2026-09-29,Vanilla cupcakes (box of 12),33,22
+2026-09-29,Lemon tart,7,18
+2026-09-29,Butter croissant,117,4
+2026-09-29,Sourdough loaf,40,7
+2026-09-30,Chocolate celebration cake,12,34
+2026-09-30,Vanilla cupcakes (box of 12),27,22
+2026-09-30,Lemon tart,7,18
+2026-09-30,Butter croissant,105,4
+2026-09-30,Sourdough loaf,49,7

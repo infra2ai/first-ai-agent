@@ -1,0 +1,16 @@
+{
+  "name": "blue-penguin-bakery-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo website that chats with a Microsoft Foundry agent through the Responses API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.13.0"
+  }
+}
